@@ -477,11 +477,11 @@ a:hover {
   justify-content: center;
   background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
   position: relative;
+  padding-top:20px;
 }
 
 .product-card-header {
   position: absolute;
-  transform: translateY(-400px);
   font-family: "Prompt", cursive;
   font-size: 50px;
   text-align: center;
@@ -490,6 +490,7 @@ a:hover {
   animation-name: textflicker;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  top:6px;
 }
 @keyframes textflicker {
   from {
@@ -509,7 +510,7 @@ a:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   z-index: 3;
   overflow: hidden;
-  margin: 20px;
+  margin: 32px 20px;
 }
 #card1 {
   background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
@@ -710,11 +711,8 @@ a:hover {
   margin-left: 30px;
 }
 footer {
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(53, 96, 210, 1) 100%
-  );
+  background: linear-gradient(
+90deg, rgb(213, 51, 105) 0%, rgb(218, 174, 81) 100%);
   color: cornsilk;
   padding-top: 30px;
 }
@@ -748,6 +746,9 @@ footer img {
     flex-direction: column;
     
 } */
+footer .container {
+  padding: 0 50px;
+}
 
 footer li {
   list-style-type: none;
