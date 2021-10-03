@@ -280,14 +280,34 @@ a:hover {
   display: flex;
   margin-top: 0px;
   flex-direction: row;
+  margin-bottom: -7px;
+}
+
+.img-about {
+  flex-basis: 50%;
 }
 
 .img-about img {
-  flex-basis: 50%;
-  height: 100vh;
+  height: 120vh;
   min-height: 0px;
+  width: 100%;
 }
 
+.about-us .text {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 100px 100px;
+  background-image: url(./images/bg_abt.jpeg);
+}
+
+.about-us .heading-2 {
+  font-family: "Permanent Marker", cursive;
+  padding-bottom: 30px;
+}
 /* contact */
 * {
   box-sizing: border-box;
