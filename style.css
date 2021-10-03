@@ -455,6 +455,7 @@ a:hover {
   padding: 14px 54px;
   display: inline-block;
   border: 1px solid;
+  cursor: pointer;
 }
 
 #contact a {
