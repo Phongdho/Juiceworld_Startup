@@ -41,3 +41,16 @@ tabs.forEach((tab, index) => {
     pane.classList.add('active')
   }
 })
+
+var scene = document.getElementById('card4');
+var parallaxInstance = new Parallax(card4);
+
+$('body').toggleClass('loaded');
+$(document).ready(function() {
+ 
+  setTimeout(function(){
+      $('body').addClass('loaded');
+      $('h1').css('color','#222222');
+  }, 3000);
+
+});
