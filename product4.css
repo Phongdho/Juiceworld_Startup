@@ -23,7 +23,7 @@ body {
   font-weight: 400;
   color: var (--pink);
   font-family: "Recursive", sans-serif;
-  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
+  background: linear-gradient(90deg, #ffad63 0%, #f25431 100%) !important;
 }
 
 /* Styling Nav bar */
