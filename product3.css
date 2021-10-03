@@ -23,7 +23,7 @@ body {
   font-weight: 400;
   color: var (--pink);
   font-family: "Recursive", sans-serif;
-  background: linear-gradient(90deg, #f5db4b 10%, #ff8221 100%);
+  background: linear-gradient(90deg, #e02f0f 10%, #ff8221 100%);
 }
 
 /* Styling Nav bar */
@@ -88,7 +88,7 @@ a:hover {
   display: block;
   margin: auto;
   opacity: 0.8;
-  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
+  background: linear-gradient(90deg, #fdbb2d 0%, #e02f0f 100%);
 }
 
 .b-circle img {
@@ -134,7 +134,7 @@ a:hover {
 
 .header2 {
   padding-bottom: 10px;
-  color: #22c1c3;
+  color: #e02f0f;
   text-shadow: 2px 2px lightgray;
   font-size: 50px;
   font-family: "Prompt";
@@ -227,7 +227,7 @@ button.content__btn:active {
 }
 .button__quantity {
   border: 1px solid #ccc;
-  padding: 5px -21px 5px 5px;
+  padding: 5px -21px 1px 5px;
   margin-right: 60px;
   padding: 8px 0 8px 15px;
   border-radius: 10px;
