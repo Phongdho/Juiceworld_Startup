@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Recursive:wght@300;400;500;600&family=Yellowtail&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -10,7 +11,6 @@ html, body {
 }
 
 body {
-  color: #444;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0px;
@@ -139,27 +139,50 @@ a:hover {
 .slider__txt {
   position: absolute;
   transform: translateX(-350px);
+  z-index: 2;
   height: 300px;
   width: 300px;
   padding-top: 80px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
   text-align: center;
+  font-family: 'Prompt', sans-serif;
   text-transform: uppercase;
-  -webkit-box-shadow: -6px -8px 10px #F8A50E, -4px 7px 10px #BFF80E, 6px -4px 10px #0ED6F8;
-	-moz-box-shadow: -6px -8px 10px #F8A50E, -4px 7px 10px #BFF80E, 6px -4px 10px #0ED6F8;
-	box-shadow: -6px -8px 10px #F8A50E, -4px 7px 10px #BFF80E, 6px -4px 10px #0ED6F8;
-
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-
-	-webkit-transition: box-shadow .4s ease;
-	-moz-transition: box-shadow .4s ease;
-	-o-transition: box-shadow .4s ease;
-	-ms-transition: box-shadow .4s ease;
-	transition: box-shadow .4s ease;
+  letter-spacing: 0.5rem;
+  text-shadow: 2px 2px lightskyblue;
+  text-align: left;
+  color: white !important;
 }
+
+.slider__right {
+  position: absolute; 
+  transform: translateX(350px);
+  z-index: 2;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 30px;
+  color: white;
+  background: linear-gradient(-45deg, #d53369, #daae51, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: 'Prompt', sans-serif;
+}
+    
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 
 .slider__contents {
   height: 100%;
@@ -208,8 +231,9 @@ a:hover {
   width: 700px;
   height: 700px;
   position: absolute;
+  z-index: 1;
   transform: translateY(250px);
-  -webkit-box-shadow: -6px -8px 10px #F8A50E, -4px 7px 10px #BFF80E, 6px -4px 10px #0ED6F8;
+  -webkit-box-shadow: -6px -8px 10px #F8A50E, -4px 7px 10px #BFF80E, 6px -4px 10px #16acc7;
 	-moz-box-shadow: -6px -8px 10px #F8A50E, -4px 7px 10px #BFF80E, 6px -4px 10px #0ED6F8;
 	box-shadow: -6px -8px 10px #F8A50E, -4px 7px 10px #BFF80E, 6px -4px 10px #0ED6F8;
 
@@ -252,6 +276,7 @@ a:hover {
 .slider_img {
   position: absolute;
   transform: translateY(200px);
+  z-index: 3;
 }
 
 .slider__txt {
