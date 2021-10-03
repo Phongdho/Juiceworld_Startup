@@ -2,13 +2,13 @@
 var textWrapper = document.querySelector('.slider__txt');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
+anime.timeline({ loop: true })
   .add({
     targets: '.slider__txt .letter',
-    opacity: [0,1],
+    opacity: [0, 1],
     easing: "easeInOutQuad",
     duration: 2250,
-    delay: (el, i) => 150 * (i+1)
+    delay: (el, i) => 150 * (i + 1)
   }).add({
     targets: '.slider__txt',
     opacity: 0,
