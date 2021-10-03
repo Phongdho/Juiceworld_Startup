@@ -48,7 +48,12 @@ a {
   font-weight: 400;
 }
 a:hover {
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
 }
@@ -470,12 +475,16 @@ a:hover {
   font-family: "Poppins", sans-serif;
 }
 
-#section3{
+#section3 {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
 }
 .product-card {
   position: relative;
@@ -488,47 +497,47 @@ a:hover {
   overflow: hidden;
   margin: 20px;
 }
-#card1{
-  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+#card1 {
+  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
 }
-#card2{
+#card2 {
   background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
-#card3{
-  background: linear-gradient(90deg, #F5DB4B 10%, #FF8221 100%);
+#card3 {
+  background: linear-gradient(90deg, #f5db4b 10%, #ff8221 100%);
 }
-#card4{
-  background: linear-gradient(90deg, #FFAD63 0%, #F25431 100%);
+#card4 {
+  background: linear-gradient(90deg, #ffad63 0%, #f25431 100%);
 }
-.product-card .logo-cart{
+.product-card .logo-cart {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* border: 1px solid red; */
 }
-.product-card .logo-cart img{
+.product-card .logo-cart img {
   height: 100px;
   width: 60px;
   object-fit: cover;
   /* border: 1px solid red; */
 }
 
-.product-card .logo-cart i{
+.product-card .logo-cart i {
   font-size: 27px;
   color: #707070;
   cursor: pointer;
   transition: color 0.3s ease;
   /* border: 1px solid red; */
 }
-.product-card .logo-cart i:hover{
+.product-card .logo-cart i:hover {
   color: #333;
 }
-.product-card .main-images{
+.product-card .main-images {
   position: relative;
   height: 210px;
 }
 
-.product-card .main-images img{
+.product-card .main-images img {
   position: absolute;
   height: 220px;
   width: 100%;
@@ -542,100 +551,95 @@ a:hover {
   margin-top: 30px;
   padding-right: 15px;
 }
-.product-card .main-images img.active{
+.product-card .main-images img.active {
   opacity: 1;
 }
 .juice_name {
   padding-top: 20px;
   font-size: 24px;
-  font-family: 'Recursive';
+  font-family: "Recursive";
   font-weight: 500;
   color: #fff;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff, 
-                 0 0 40px #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 
 .juice-info {
-  font-family: 'Recursive';
+  font-family: "Recursive";
   font-size: 16px;
   padding-top: 20px;
 }
-.product-card .juice-details p{
+.product-card .juice-details p {
   font-size: 12px;
   font-weight: 400;
   color: #333;
   text-align: justify;
 }
-.product-card .juice-details .stars i{
+.product-card .juice-details .stars i {
   margin: 0 -1px;
   color: #333;
 }
-.product-card .color-price .color-option{
+.product-card .color-price .color-option {
   display: flex;
   align-items: center;
 }
-.color-price{
+.color-price {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
 }
-.color-price .color-option .color{
+.color-price .color-option .color {
   font-size: 18px;
   font-weight: 500;
   color: white;
   margin-right: 8px;
-  font-family: 'Recursive';
+  font-family: "Recursive";
 }
-.color-option  .circles{
+.color-option .circles {
   display: flex;
 }
-.color-option  .circles .circle{
+.color-option .circles .circle {
   height: 18px;
   width: 18px;
-  background: #0071C7;
+  background: #0071c7;
   border-radius: 50%;
   margin: 0 4px;
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.color-option  .circles .circle.blue.active{
-  box-shadow: 0 0 0 2px #fff,
-               0 0 0 4px #0071C7;
+.color-option .circles .circle.blue.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0071c7;
 }
-.color-option  .circles .circle.pink{
-  background: #FA1795;
+.color-option .circles .circle.pink {
+  background: #fa1795;
 }
-.color-option  .circles .circle.pink.active{
-  box-shadow: 0 0 0 2px #fff,
-               0 0 0 4px #FA1795;
+.color-option .circles .circle.pink.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #fa1795;
 }
-.color-option  .circles .circle.yellow{
-  background: #F5DA00;
+.color-option .circles .circle.yellow {
+  background: #f5da00;
 }
-.color-option  .circles .circle.yellow.active{
-  box-shadow: 0 0 0 2px #fff,
-               0 0 0 4px #F5DA00;
+.color-option .circles .circle.yellow.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f5da00;
 }
-.color-price .price{
+.color-price .price {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.color-price .price .price_num{
+.color-price .price .price_num {
   font-size: 25px;
   font-weight: 600;
   color: white;
 }
-.color-price .price .price_letter{
+.color-price .price .price_letter {
   font-size: 10px;
   font-weight: 600;
   margin-top: -4px;
   color: white;
 }
-.product-card .button{
+.product-card .button {
   position: relative;
   height: 50px;
   width: 100%;
@@ -643,19 +647,19 @@ a:hover {
   margin-top: 30px;
   overflow: hidden;
 }
-.product-card .button .button-layer{
+.product-card .button .button-layer {
   position: absolute;
   height: 100%;
   width: 300%;
   left: -100%;
   /* background-image: linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF ); */
   transition: all 0.4s ease;
-  border-radius: 25PX;
+  border-radius: 25px;
 }
-.product-card .button:hover .button-layer{
+.product-card .button:hover .button-layer {
   left: 0;
 }
-.product-card .button button{
+.product-card .button button {
   position: relative;
   height: 100%;
   width: 100%;
@@ -674,19 +678,17 @@ a:hover {
     justify-content: around;
 } */
 
-.product-card .juice-details .juice_name:hover{
-    transition: .5s linear;
-    color: black;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff, 
-                 0 0 40px #fff;
-  }
-  .product-card .juice-details .juice_name:nth-child(1){
-    margin-right: 5px
-  }
-  .product-card .juice-details .juice_name:nth-child(2){
-    margin-left: 30px
-  }
+.product-card .juice-details .juice_name:hover {
+  transition: 0.5s linear;
+  color: black;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+.product-card .juice-details .juice_name:nth-child(1) {
+  margin-right: 5px;
+}
+.product-card .juice-details .juice_name:nth-child(2) {
+  margin-left: 30px;
+}
 footer {
   background: radial-gradient(
     circle,
@@ -898,7 +900,6 @@ a:hover {
   font-size: 50px;
 }
 
-
 .bottom-row {
   display: flex;
   justify-content: space-between;
@@ -1084,9 +1085,9 @@ input#js-quantity {
   width: 100%;
   justify-content: center;
   padding: 150px 0;
-  background: linear-gradient(90deg, #F5DB4B 10%, #FF8221 100%);
+  background: linear-gradient(90deg, #f5db4b 10%, #ff8221 100%);
 }
-.slider__img{
+.slider__img {
   flex-basis: 50%;
   display: flex;
   justify-content: center;
@@ -1165,11 +1166,14 @@ img.slider__img_a {
 }
 /* story */
 @font-face {
-  font-family: 'Permanent Marker';
+  font-family: "Permanent Marker";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/permanentmarker/v10/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/permanentmarker/v10/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 .div-block-13 {
   position: relative;
@@ -1178,7 +1182,11 @@ img.slider__img_a {
   margin-top: 0;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
 }
 .text-block-34 {
   margin-top: 70px;
@@ -1202,10 +1210,10 @@ img.slider__img_a {
 .paragraph-bigger.cc-bigger-light {
   margin-bottom: 0px;
   padding-top: 19px;
-  font-family: 'Recursive';
-  color: #FFAD63;
+  font-family: "Recursive";
+  color: #ffad63;
   font-size: 30px;
-  text-shadow: 2px 2px #22C1C3;
+  text-shadow: 2px 2px #22c1c3;
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
@@ -1217,7 +1225,7 @@ img.slider__img_a {
   padding-right: 0px;
   padding-left: 0px;
   text-align: center;
-  font-family: 'Recursive';
+  font-family: "Recursive";
   padding-left: 30px;
   padding-right: 30px;
 }
