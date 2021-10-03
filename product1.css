@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Recursive:wght@300;400;500;600&family=Yellowtail&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
 
 :root {
   --white: #fff;
@@ -23,12 +23,12 @@ body {
   font-weight: 400;
   color: var (--pink);
   font-family: "Recursive", sans-serif;
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
 }
 
 /* Styling Nav bar */
 nav {
-  position: absolute;
+  position: sticky;
   width: 100%;
   height: 80px;
   background: transparent;
@@ -48,11 +48,16 @@ a {
   text-decoration: none;
   color: white;
   cursor: pointer;
-  font-family: 'Recursive';
+  font-family: "Recursive";
   font-weight: 400;
 }
 a:hover {
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
 }
@@ -83,7 +88,7 @@ a:hover {
   display: block;
   margin: auto;
   opacity: 0.8;
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
 }
 
 .b-circle img {
@@ -98,7 +103,7 @@ a:hover {
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 200px;
-  font-family: 'Recursive';
+  font-family: "Recursive";
 }
 
 .content-product {
@@ -122,29 +127,28 @@ a:hover {
   color: gray;
   font-weight: 500;
   font-size: 30px;
-  font-family: 'Prompt';
+  font-family: "Prompt";
   letter-spacing: 0.5rem;
   border-bottom: 1px solid gray;
 }
 
 .header2 {
   padding-bottom: 10px;
-  color: #d53369;
+  color: #22c1c3;
   text-shadow: 2px 2px lightgray;
   font-size: 50px;
-  font-family: 'Prompt';
+  font-family: "Prompt";
   font-size: 5rem;
 }
 
 .text {
   padding-bottom: 10px;
-  font-family: 'Recursive';
+  font-family: "Recursive";
   font-size: 1.5rem;
 }
 
 .content-header {
-  font-family: 'Recursive';
-
+  font-family: "Recursive";
 }
 .bottom-row {
   display: flex;
@@ -165,8 +169,12 @@ table tr td {
   border-bottom: none;
   padding: 5px;
   color: black;
-  font-family: 'Recursive'
-;  background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+  font-family: "Recursive";
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
 }
 table tr th:first-child,
 table tr td:first-child {
@@ -196,8 +204,12 @@ button.content__btn {
   outline: none;
   border: 1px solid #ccc;
   margin: 0 6px;
-  background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
-  font-family: 'Recursive';
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+  font-family: "Recursive";
 }
 button.content__btn:active {
   background: -webkit-radial-gradient(10px 10px, circle, #ff8a00, #e52e71);
@@ -325,4 +337,64 @@ input#js-quantity {
 }
 .button__quantity span {
   cursor: pointer;
+}
+footer {
+  color: cornsilk;
+  padding-top: 30px;
+}
+
+footer .row1 {
+  display: flex;
+  justify-content: space-between;
+}
+footer .row11 {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+footer .heading {
+  color: aliceblue;
+  font-family: "Yellowtail", cursive;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+footer img {
+  max-width: 95vw;
+  height: auto;
+}
+/* footer .col1{
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+footer li {
+  list-style-type: none;
+}
+
+.footer-right img {
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+footer .row2 {
+  display: flex;
+  justify-content: right;
+  color: aliceblue;
+  font-size: 12px;
+}
+
+footer #lmao a {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: honeydew;
+  font-size: 12px;
 }
