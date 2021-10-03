@@ -310,6 +310,7 @@ a:hover {
   display: inline-block;
   border: 1px solid;
 }
+
 #contact a{
-  color:rgba(255,255,255,0.8);
+  color:rgba(255,255,255,0.6);
 }
