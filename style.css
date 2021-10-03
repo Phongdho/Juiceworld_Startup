@@ -22,7 +22,7 @@ nav {
   position: absolute;
   width: 100%;
   height: 80px;
-  background: transparent;
+  background: transparent !important;
   z-index: 1;
   top: 0;
 }
@@ -66,7 +66,7 @@ a:hover {
 
 /* Hero Styling */
 .slider {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -361,9 +361,10 @@ a:hover {
   color:#000;
 }
 #contact .contact__heading{
-  font-size:64px;
+  font-size: 3rem;
 }
 #contact .contact__heading-right {
+  font-size: rem;
   opacity: 0.8;
   margin-bottom: 32px;
 }
@@ -386,20 +387,12 @@ a:hover {
   color:rgba(255,255,255,0.5);
 }
 /* Google Fonts Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 #section3{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
+  background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
 }
 .product-card {
   position: relative;
@@ -413,16 +406,16 @@ a:hover {
   margin: 20px;
 }
 #card1{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,121,9,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
 }
 #card2{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,34,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 #card3{
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(238,25,25,1) 100%);
+  background: linear-gradient(90deg, #F5DB4B 10%, #FF8221 100%);
 }
 #card4{
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(227,225,50,1) 100%);
+  background: linear-gradient(90deg, #FFAD63 0%, #F25431 100%);
 }
 .product-card .logo-cart{
   display: flex;
@@ -465,18 +458,25 @@ a:hover {
   transition: opacity 0.5s ease;
   margin-top: 30px;
   padding-right: 15px;
-  border-radius: 30px;
 }
 .product-card .main-images img.active{
   opacity: 1;
 }
-.product-card .juice-details .juice_name{
+.juice_name {
+  padding-top: 20px;
   font-size: 24px;
+  font-family: 'Recursive';
   font-weight: 500;
   color: #fff;
     text-shadow: 0 0 10px #fff,
                  0 0 20px #fff, 
                  0 0 40px #fff;
+}
+
+.juice-info {
+  font-family: 'Recursive';
+  font-size: 16px;
+  padding-top: 20px;
 }
 .product-card .juice-details p{
   font-size: 12px;
@@ -501,8 +501,9 @@ a:hover {
 .color-price .color-option .color{
   font-size: 18px;
   font-weight: 500;
-  color: #333;
+  color: white;
   margin-right: 8px;
+  font-family: 'Recursive';
 }
 .color-option  .circles{
   display: flex;
@@ -543,13 +544,13 @@ a:hover {
 .color-price .price .price_num{
   font-size: 25px;
   font-weight: 600;
-  color: #707070;
+  color: white;
 }
 .color-price .price .price_letter{
   font-size: 10px;
   font-weight: 600;
   margin-top: -4px;
-  color: #707070;
+  color: white;
 }
 .product-card .button{
   position: relative;
@@ -582,24 +583,13 @@ a:hover {
   font-weight: 600;
   letter-spacing: 1px;
   color: #fff;
+  background-color: lightgray;
 }
 
 /* .row{
     display: flex;
     justify-content: around;
 } */
-.button-color1{
-    background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,121,9,1) 35%, rgba(0,212,255,1) 100%);
-}
-.button-color2{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,34,1) 35%, rgba(0,212,255,1) 100%);
-}
-.button-color3{
-    background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(238,25,25,1) 100%);
-}
-.button-color4{
-    background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(227,225,50,1) 100%);
-}
 
 .product-card .juice-details .juice_name:hover{
     transition: .5s linear;
@@ -826,9 +816,6 @@ a:hover {
   font-size: 50px;
 }
 
-.text {
-  padding-bottom: 30px;
-}
 
 .bottom-row {
   display: flex;
@@ -1085,45 +1072,82 @@ margin-bottom: 8px;
 }
 .div-block-13 {
   position: relative;
-  top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 90px;
   display: flex;
   margin-top: 0;
   justify-content: center;
   flex-direction: column;
+  background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
 }
 .text-block-34 {
-  margin-top: 44px;
-  font-family: "Permanent Marker", cursive;
+  margin-top: 70px;
+  font-family: "Yellowtail", cursive;
   font-size: 44px;
   text-align: center;
+  color: #d53369;
+  animation-duration: 0.1s;
+  animation-name: textflicker;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
 }
 .paragraph-bigger.cc-bigger-light {
   margin-bottom: 0px;
   padding-top: 19px;
-  opacity: 1;
-  font-family: Montserrat, sans-serif;
-  color: #000;
+  font-family: 'Recursive';
+  color: #FFAD63;
   font-size: 30px;
+  text-shadow: 2px 2px #22C1C3;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
 }
 .text-block-35 {
   padding-top: 18px;
   padding-right: 0px;
   padding-left: 0px;
   text-align: center;
+  font-family: 'Recursive';
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-
+/* Styling about us */
 .about-us {
   display: flex;
   margin-top: 0px;
+  margin-bottom: 0px;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: lightgray;
 }
 
 .img-about img {
   flex-basis: 50%;
   height: 100vh;
-  min-height: 0px;
 }
+
+.about-us .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Recursive';
+}
+
+.heading-2 {
+  font-family: 'Prompt';
+}
+
 
