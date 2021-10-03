@@ -282,8 +282,8 @@ a:hover {
   flex-direction: row;
 }
 
-.about-us img {
-  display: block;
+.img-about img {
+  flex-basis: 50%;
   height: 100vh;
   min-height: 0px;
 }
